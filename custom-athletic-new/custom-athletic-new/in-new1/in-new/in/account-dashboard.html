@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-child.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+	<div class="login-page">
+		<div class="order-title text-center">
+			<span>order by december 18 for guaranted christmas delivery</span>
+		</div>
+		<nav class="navbar navbar-default" role="navigation">
+		        <div class="navbar-header">
+		        	<div class="logo-header">
+						<h1>custom athletics</h1>
+					</div>
+		          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		            	<span class="sr-only">Toggle navigation</span>
+		            	<span class="icon-bar"></span>
+		            	<span class="icon-bar"></span>
+		            	<span class="icon-bar"></span>
+		          	</button>
+		        </div>
+	        <!-- Collect the nav links, forms, and other content for toggling -->
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	          	<ul class="nav navbar-nav">
+	            	<li class="dropdown">
+		              	<a href="#" class="dropdown-toggle" data-toggle="dropdown">MEN</a>
+		              	<ul class="dropdown-menu">
+		                	<li><a href="#">JACKETS</a></li>
+		                	<li><a href="#">HOODIES / SWEATSHIRTS</a></li>
+		                	<li><a href="#">TEES</a></li>
+		                	<li><a href="#">BASELAYER</a></li>
+		                	<li><a href="#">ACCESSORIES</a></li>
+		                	<li><a href="#">LUGGAGE</a></li>
+		              	</ul>
+		            </li>
+		            <li class="dropdown">
+		              	<a href="#" class="dropdown-toggle" data-toggle="dropdown">WOMEN</a>
+		              	<ul class="dropdown-menu">
+		                	<li><a href="#">JACKETS</a></li>
+		                	<li><a href="#">HOODIES / SWEATSHIRTS</a></li>
+		                	<li><a href="#">TEES</a></li>
+		                	<li><a href="#">BASELAYER</a></li>
+		                	<li><a href="#">ACCESSORIES</a></li>
+		                	<li><a href="#">LUGGAGE</a></li>
+		              	</ul>
+		            </li>
+		            <li class="dropdown">
+		              	<a href="#" class="dropdown-toggle" data-toggle="dropdown">JUNIOR</a>
+		              	<ul class="dropdown-menu">
+		                	<li><a href="#">JACKETS</a></li>
+		                	<li><a href="#">HOODIES / SWEATSHIRTS</a></li>
+		                	<li><a href="#">TEES</a></li>
+		                	<li><a href="#">BASELAYER</a></li>
+		                	<li><a href="#">ACCESSORIES</a></li>
+		                	<li><a href="#">LUGGAGE</a></li>
+		              	</ul>
+		            </li>
+	          	</ul>
+				<div class="logo">
+					<h1>custom athletics</h1>
+				</div>
+		        <ul class="nav navbar-nav navbar-right">
+					<li class="dropdown wrap">
+						<input id="search_submit" value="Rechercher" type="submit">
+					</li>
+		            <li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/user.png"></a>
+		                <ul class="dropdown-menu login-form-tooltip" style="padding: 15px;min-width: 250px;">
+		                    <div class="text-center"><h3><b class="text-uppercase f-size-15 letter-spacing"	>Log In</b></h3></div>
+	                        <li>
+                           		<div class="row">
+                              		<div class="col-md-12">
+                                 		<form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+		                                    <div class="form-group">
+		                                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+		                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+		                                    </div>
+		                                    <div class="form-group">
+		                                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+		                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+		                                    </div>
+		                                    <div class="checkbox">
+		                                       <label>
+		                                       <input type="checkbox"> Remember me
+		                                       </label>
+		                                    </div>
+		                                    <div class="form-group">
+		                                       <a href="#" type="submit" class="btn btn-success btn-block">Sign in</a>
+		                                    </div>
+		                                </form>
+                              		</div>
+                           		</div>
+                        	</li>
+		                </ul>
+		            </li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/bag.png"></a>
+						<ul class="dropdown-menu wrapper-box" style="min-width: 280px;">
+	                        <li>
+	                        	<div class="wrapper-open-cart">
+                         			<h5 class="letter-spacing text-center">THE CART IS EMPTY</h5>
+                         			
+                           		</div>
+                           		<div class="info-text">
+                         				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                         			</div>
+                        	</li>
+		                </ul>
+					</li>
+				</ul>
+	        </div>
+
+	        <div class="cell-table">
+	        	<div class="cell">
+
+	        		<input id="search" name="search" type="text" placeholder="Search Products, teams, unis and schools">
+	        		<input id="search_submit" value="Rechercher" type="submit">
+	        		<a class="close-btn" href="#">X</a>
+	        	</div>
+	        </div>
+	        <!-- /.navbar-collapse -->
+	      <!-- /.container-fluid -->
+	   	</nav>
+		<div class="account-wrapper">
+			<ul class="nav nav-pills nav-stacked col-md-3">
+			  	<li class="active"><a href="#tab_a" data-toggle="pill">MY ACCOUNT</a></li>
+			  	<li><a href="#tab_b" data-toggle="pill">MY ORDERS</a></li>
+			  	<li><a href="#tab_c" data-toggle="pill">ACCOUNT INFORMATION</a></li>
+			  	<li><a href="#tab_d" data-toggle="pill">NEWSLETTER</a></li>
+			  	<li><a href="#tab_e" data-toggle="pill">ADDRESS BOOK</a></li>
+			</ul>
+			<div class="tab-content account-details col-md-9">
+        		<div class="tab-pane active" id="tab_a">
+        			<span  class="col-md-offset-3 bredcums-nav">Home > </span>
+		        	<div class="breadcrums-1">
+						 <div class="sign-up-account">
+						    	<a href="#">SIGN OUT</a>	
+						   </div>					
+					</div>
+            		 <h4 class="col-md-offset-2 pl-25">MY ACCOUNT</h4>
+            		<p>Use this section to amend your custom Athletics account details and view details of any orders placed.</p>
+					<label class="heading-color">RECENT ORDERS</label>
+					<div class="table-responsive">
+	            	<table class="table table-hover ">
+					    <thead>
+						    <tr>
+						        <th>Order#</th>
+						        <th>Date</th>
+						        <th>Ship To</th>
+						        <th >Order Total</th>
+						        <th>Status</th>
+						        <th></th>
+						    </tr>
+					    </thead>
+					    <tbody>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td>Customer Name</td>
+					        	<td>&pound; 50</td>
+					        	<td><i>Processing</i></td>
+					        	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					    </tbody>
+			  		</table>
+			  		</div>
+					<div class="account-info">
+					  	<label class="heading-color">ACCOUNT INFORMATION</label>
+					</div>
+					<div class="row">
+					  	<div class="col-lg-5">
+					  		<div class="account-info-content-left">
+						  		<span class="letter-spacing">CONTACT INFORMATION</span>
+						  		<div class="block">
+						  			<span class="f-size-11">emailadress@emailaddress.com</span>
+						  		</div>
+						  		<a class="account-color f-size-11">change password</a>
+						  		<div class="sign-up-account">
+						    		<a href="#">EDIT</a>	
+						   		</div>
+					  		</div>
+					  	</div>
+					  	<div class="col-lg-5">
+					  		<div class="account-info-content-right">
+						  		<span class="letter-spacing">NEWSLETTER</span>
+						  		<div class="block">
+						  			<span class="f-size-11">You are subscribed to our newsletter</span>
+						  		</div>
+						  			<div class="sign-up-account mt-58">
+						    		<a href="#">EDIT</a>	
+						   		</div>
+					  		</div>
+				  		</div>
+					</div>
+
+					<div class="account-info">
+					  	<label class="heading-color">ADDRESS BOOK</label>
+					  	<a class="account-color font-regular letter-spacing-0 ml-10">Manage addresses</a>
+					</div>
+					<div class="row">
+					  	<div class="col-lg-5">
+					  		<div class="account-info-content-left">
+						  		<span class="letter-spacing">DEFAULT BILLING ADDRESS</span>
+						  		<address class=" letter-spacing mt-10">Address Line 1<br>
+						  			Address Line 1<br>
+						  			city<br>
+						  			postcode<br>
+						  			00000000000
+						  		</address>
+						  		<a class="account-color font-regular letter-spacing-0">Edit addresses</a>
+					  		</div>
+					  	</div>
+					  	<div class="col-lg-5">
+					  		<div class="account-info-content-right">
+						  		<span class="letter-spacing">DEFAULT SHIPPING ADDRESS</span>
+						  		<address class=" letter-spacing mt-10">Address Line 1<br>
+						  			Address Line 1<br>
+						  			city<br>
+						  			postcode<br>
+						  			00000000000
+						  		</address>
+						  		<a class="account-color font-regular letter-spacing-0">Edit addresses</a>				  		
+					  		</div>
+				  		</div>
+					</div>
+		        </div>
+        		<div class="tab-pane" id="tab_b">
+           			<span  class="col-md-offset-3 bredcums-nav">Home > My Accounts</span>
+        			<div class="breadcrums-1">
+						<div class="sign-up-account">
+					   		<a href="#">SIGN OUT</a>	
+						</div>					
+					</div>
+             		<h4 class="col-md-offset-3">MY ORDERS</h4>
+            		<p>Use this section to amend your custom Athletics account details and view details of any orders placed.</p>
+					<label class="heading-color">RECENT ORDERS</label>
+					<div class="table-responsive">
+	            	<table class="table table-hover">
+					    <thead>
+					      	<tr>
+					        	<th>Order#</th>
+					        	<th>Date</th>
+					        	<th>Ship To</th>
+					         	<th >Order Total</th>
+					          	<th>Status</th>
+					          	<th></th>
+					      	</tr>
+					    </thead>
+					    <tbody>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td>Customer Name</td>
+					        	<td>&pound; 50</td>
+					        	<td><i>Processing</i></td>
+					        	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					        	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					         	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					      	<tr>
+					        	<td>1000001</td>
+					        	<td>09/01/2018</td>
+					        	<td >Customer Name</td>
+					         	<td>&pound; 50</td>
+					         	<td><i>Processing</i></td>
+					          	<td>View order</td>
+					      	</tr>
+					    </tbody>
+			  		</table>
+			  	</div>
+			  		<div class="table-page-desc f-size-11 text-left">
+			  			<span>1 to 10 of 50</span>
+			  	 	</div>
+			 
+				   <ul class="pagination pull-right">
+				   		<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+	  				</ul>
+        		</div>
+		        <div class="tab-pane" id="tab_c">
+		           <span  class="col-md-offset-2 bredcums-nav">Home > My Accounts</span>
+		        	<div class="breadcrums-1">				
+						 <div class="sign-up-account">
+						    	<a href="#">SIGN OUT</a>	
+						   </div>					
+					</div>
+		             <h4 class="col-md-offset-1">ACCOUNT INFORMATION</h4>
+		               <div class="account-info mt-35">
+					  	<label class="heading-color">EDIT ACCOUNT INFORMATION</label>
+					  </div>
+							<div class="horizonal-form-layout mt-20">
+						<form class="form-horizontal" action="/action_page.php">
+						  <div class="form-group">
+						    <label class="control-label col-sm-2 letter-spacing-0" for="first-name">First Name </label>
+						    <div class="col-sm-5">
+						      <input type="text" class="form-control form-control-custom" id="email" placeholder="Joe">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label class="control-label col-sm-2 letter-spacing-0" for="last-name">Last Name </label>
+						    <div class="col-sm-5"> 
+						      <input type="text" class="form-control form-control-custom" id="pwd" placeholder="Blogs">
+						    </div>
+						  </div>
+						  <div class="form-group"> 
+						    <div class="col-sm-offset-1 col-sm-9">
+						      <div class="checkbox">
+						        <label class="letter-spacing-0"><input type="checkbox"> Change Email</label>
+						      </div>
+						       <div class="checkbox">
+						        <label class="letter-spacing-0"><input type="checkbox"> Change Password</label>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="form-group"> 
+						    <div class="col-sm-9 col-sm-offset-1">
+						    <div class="sign-up-account">
+						    	<a href="#">SAVE</a>	
+						   </div>	
+						    </div>
+						  </div>
+						</form>
+						</div>
+		        </div>
+		        <div class="tab-pane" id="tab_d">
+		            <h4>Pane D</h4>
+		            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+		        </div>
+       			<div class="tab-pane" id="tab_e">
+              		<span  class="col-md-offset-3 bredcums-nav">Home > </span>
+        			<div class="breadcrums-1">
+				 		<div class="sign-up-account">
+				    		<a href="#">SIGN OUT</a>	
+				   		</div>					
+					</div>
+             		<h4 class="col-md-offset-2">ADDRESSS BOOK</h4>
+               		<div class="account-info mt-35">
+			  			<label class="heading-color">DEFAULT ADDRESSES</label>
+			  		</div>
+			   		<div class="row">
+					  	<div class="col-lg-5">
+					  		<div class="account-info-content-left">
+					  			<div class="sign-up-account">
+						    		<a href="#">EDIT BILLING ADDRESS</a>	
+						  		 </div>
+						  		<span class="letter-spacing">DEFAULT BILLING ADDRESS</span>
+
+						  		<address class=" letter-spacing mt-10">Address Line 1<br>
+						  			Address Line 1<br>
+						  			city<br>
+						  			postcode<br>
+						  			00000000000
+						  		</address>				  		
+					  		</div>
+					  	</div>
+					  	<div class="col-lg-5">
+					  		<div class="account-info-content-right">
+					  			<div class="sign-up-account">
+						    		<a href="#">EDIT SHIPPING ADDRESS</a>	
+						  		 </div>
+						  		<span class="letter-spacing">DEFAULT SHIPPING ADDRESS</span>
+						  		<address class=" letter-spacing mt-10">Address Line 1<br>
+						  			Address Line 1<br>
+						  			city<br>
+						  			postcode<br>
+						  			00000000000
+						  		</address>				  		
+					  		</div>
+				  		</div>
+			  		</div>
+			   		<div class="account-info mt-20">
+			  			<label class="heading-color">DEFAULT ADDRESSES</label>
+			  		</div>
+			  		<div class="row">
+					  	<div class="col-lg-5">
+					  		<div class="account-info-content-left">
+					  			<div class="sign-up-account">
+						    		<a href="#">ADD NEW ADDRESS</a>	
+						  		 </div>
+						  		<span class="letter-spacing">DEFAULT BILLING ADDRESS</span>
+
+						  		<address class=" letter-spacing mt-10">
+						  			Customer Name<br>
+						  			Address Line 1<br>
+						  			Address Line 1<br>
+						  			city<br>
+						  			postcode<br>
+						  			00000000000
+						  		</address>	
+						  		<a class="account-color f-size-11">Edit Address |</a> <a class="account-color f-size-11"> Delete Address </a>	
+
+						  		<address class=" letter-spacing mt-10">
+						  				Customer Name<br>Address Line 1<br>
+						  			Address Line 1<br>
+						  			city<br>
+						  			postcode<br>
+						  			00000000000
+						  		</address>	
+						  		<a class="account-color f-size-11">Edit Address |</a> <a class="account-color f-size-11"> Delete Address </a>				  		
+					  		</div>
+					  	</div>
+			  		</div>
+        		</div>
+			</div><!-- tab content -->
+		</div>
+		<div class="footer-content mt-58" data-sticky-footer>
+			<ul>
+				<li><a href="#"><img src="images/footer-image-logo.png" class="img-responsive"></a>
+				</li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">contact</a></li>
+				<li><a href="#">Delivery &amp; Returns</a></li>
+				<li><a href="#">T&amp;CS</a></li>
+				<li><a href="#">Privacy &amp; Cookies</a></li>
+				<li> <label class="pound">£</label> <select class="form-control" id="sel1">
+
+     				   <option>GBP</option>
+        				<option>GBP</option>
+        				<option>GBP</option>
+        				<option>GBP</option>
+      				</select>
+      				<i class="fa fa-angle-down fa-lg down"></i>
+      			</li>
+      			<li><div class="form-group">
+          				 <input type="email" class="form-control form-control-email" id="email" placeholder="Email address" name="email">
+          				 <button type="submit" class="btn btn-default sign-up-email">Sign up</button>
+    				</div>
+    			</li>
+    		
+			</ul>
+			<ul class="social">
+				<li><a href="#"><i class="fa fa-facebook white fa-lg" aria-hidden="true"></i></a></li>
+				<li> <a href="#"><i class="fa fa-twitter white fa-lg" aria-hidden="true"></i></a></li>
+				<li> <a href="#"><i class="fa fa-instagram white fa-lg" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main-child.js"></script>
+<!-- <script src="js/sticky-footer.js"></script> -->
+<script>
+    // stickyFooter.init({
+    // 	selectorFooter: '[data-sticky-footer]', // Selector for the footer (must use a valid CSS selector) 
+    // callback: function () {},
+    // });
+    
+</script> 
+
+</body>
+</html>

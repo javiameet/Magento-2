@@ -1,0 +1,40 @@
+<div id="custom-header-id" class="header">	   
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>            
+        </div>
+        <div class="mainmenu">
+    		<div id="navbarCollapse" class="collapse navbar-collapse">
+				<div class="nav navbar-nav">
+					<?php echo $this->getLayout()->createBlock("Magento\Theme\Block\Html\Topmenu")->setTemplate("Magento_Theme::html/topmenu.phtml")->toHtml(); ?>
+				</div>			
+			</div>	
+        </div>        
+		<div class="logo"><?php echo $this->getChildHtml("logo"); ?></div>		
+		<ul class="nav navbar-nav navbar-right">
+			<li class="search_menu">
+				<a href="javascript:void(0);" id="search_icon"></a>				
+			</li>
+            <li class="dropdown">
+                <a href="javascript:void(0);" id="login_icon">
+                	<img src="<?php echo $block->getViewFileUrl('images/user.png'); ?>">
+                </a>
+                <?php echo $this->getLayout()->createBlock("Magento\Customer\Block\Form\Login")->setTemplate("Magento_Theme::form/login.phtml")->toHtml(); ?>
+            </li>
+			<li class="minicart_menu">
+				<?php echo $this->getChildHtml('minicart'); ?>
+			</li>
+		</ul>
+		<div class="cell-table">
+    		<div class="cell">	        			
+    			<?php echo $this->getChildHtml("topSearch"); ?>
+    			<a class="close-btn" href="javascript:void(0);">X</a>
+    		</div>
+    	</div>	
+	</nav>       
+</div>

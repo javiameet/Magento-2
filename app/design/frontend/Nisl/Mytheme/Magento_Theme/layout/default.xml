@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceBlock name="logo">
+			<arguments>
+				<argument name="logo_file" xsi:type="string">images/logo.png</argument>
+				<argument name="logo_img_width" xsi:type="number">134</argument>
+				<argument name="logo_img_height" xsi:type="number">69</argument>
+			</arguments>
+		</referenceBlock>
+		<referenceContainer name="header.container">
+     		<block class="Magento\Framework\View\Element\Template" name="custom_header" as="custom_header" template="Magento_Theme::html/customheader.phtml"  before="-" />
+		</referenceContainer>
+		<move element="minicart" destination="custom_header"/>
+		<move element="top.search" destination="custom_header"/>
+		<move element="logo" as="logo" destination="custom_header"/>
+		<move element="currency" destination="footer"/>
+		<referenceBlock name="register-link" remove="true" />           <!--for Create Account Link-->
+        <referenceBlock name="authorization-link" remove="true" />      <!--for Sign In Link  -->
+        <referenceBlock name="wish-list-link" remove="true" />          <!--for WishList Link-->
+        <referenceBlock name="my-account-link" remove="true" />         <!--for My Account Link-->
+        <referenceBlock name="advanced-search-link" remove="true"/>     <!--for Advance Search Link-->
+        <referenceBlock name="navigation.sections" remove="true"/>      <!--for Navigation Section Link-->
+        <referenceBlock name="report.bugs" remove="true" />  <!--for Report Bugs Link-->
+        <referenceBlock name="copyright" remove="true"/> <!--for Copyright Link-->       
+        <move element="store_switcher" destination="footer" after="footer_links" />
+        <move element="form.subscribe" destination="footer" after="currency" />
+		<referenceBlock name="footer_links">
+	        <block class="Magento\Framework\View\Element\Html\Link\Current" name="aboutus">
+	            <arguments>
+	                <argument name="label" xsi:type="string">About</argument>
+	                <argument name="path" xsi:type="string">about-us</argument>
+	            </arguments>
+	        </block>
+	        <block class="Magento\Framework\View\Element\Html\Link\Current" name="privacy-policy-link" after="terms-condition-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Privacy and Cookies</argument>
+                    <argument name="path" xsi:type="string">privacy-policy-cookie-restriction-mode</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="contact-us-link" after="aboutus">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Contact</argument>
+                    <argument name="path" xsi:type="string">contact</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="delivery-returns-link" after="contact-us-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Delivery and Returns</argument>
+                    <argument name="path" xsi:type="string">delivery-and-returns</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="terms-condition-link" after="delivery-returns-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">T and CS</argument>
+                    <argument name="path" xsi:type="string">terms-condition</argument>
+                </arguments>
+            </block>
+	    </referenceBlock>
+	    <referenceBlock name="search-term-popular-link" remove="true"/>
+        <referenceBlock name="catalog-search-advanced-link" remove="true"/>
+        <referenceBlock name="sales-guest-form-link" remove="true"/>
+	</body>
+</page>

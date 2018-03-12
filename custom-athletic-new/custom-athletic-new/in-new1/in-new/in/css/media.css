@@ -1,0 +1,569 @@
+@media(max-width: 1565px){
+	.right-sider-menu ul{
+		padding-left: 0px;
+	}
+	/*.logo{
+		width: 35%;
+	}*/
+}
+
+/*08-02-2018*/
+@media(max-width: 1400px){
+  .search-box-image{
+    height: 356px;
+  }
+  .about-us p, .about-descripition p{
+    padding: 0 190px;
+  }
+  .about-quotes p{
+    padding: 46px 80px;
+  }
+  .contact-content{
+    padding: 0 523px;
+  }
+}
+
+@media(max-width: 1200px){
+	/*.logo {
+    width: 35%;
+	}*/
+	.dropdown{
+		    margin-right: 15px;
+	}
+	.right-sider-menu ul {
+    padding-left: 15px;
+}
+.search-box-image{
+	    height: 285px;
+}
+.search-box-image .search-team{
+	    padding: 110px 0;
+	    padding-bottom: 0;
+}
+.search-box-image .search-team .search-click{
+	    top: 125px;
+}
+.footer-content ul li{
+	    margin-right: 5px;
+	    margin-bottom: 20px;
+}
+.footer-content li img{
+	    top: 35px;
+	}
+}
+@media(max-width:1199px){
+    .category-list-image img{
+        height: 360px;
+    }
+    .heading-name{
+        margin-top: 0px;
+    }
+    .middle-school-dark .sport-logo img{
+        height: 127px;
+    }
+    .middle-school-dark .sport-logo{
+        top: 136px;
+    }
+    .logo{
+      width: 45%;
+    }
+    /*08-02-2018*/
+    .about-quotes:before{
+      height: 50px;
+      width: 65px;
+    }
+    .about-quotes p{
+      margin-bottom: 0;
+    }
+    .about-quotes:after{
+      top: -18px;
+    }
+    .contact-content{
+      padding: 0 352px;
+    }
+    .account-wrapper{
+      padding: 0 35px;
+    }
+    .basket-wrapper .sport-time{
+      margin-bottom: 20px;
+    }
+    .deliver-to select#sel1{
+      margin-left: 3px;
+      width: 100%;
+    }
+    /*09-02-2018*/
+    .account-login{
+      padding-left: 135px;
+    }
+    .create-account{
+      padding-right: 135px;
+    }
+    /*10-02-2018*/
+    .product-2-list .carousel-control.right{
+      right: -79px;
+    }
+    .product-2-list .carousel-control.left{
+      left: -79px;
+    }
+
+}
+@media(max-width:991px){
+
+.search-box-image {
+    height: 195px;
+    }
+    /*08-02-2018*/
+    .middle-school-dark .sport-logo img{
+      height: 118px;
+    }
+    .logo{
+      width: 35%;
+  }
+  .logo h1, .logo-header h1{
+      font-size: 20px;
+    }
+    .about-us p, .about-descripition p{
+      padding: 0px 55px;
+    }
+    .contact-content{
+      padding: 0px 225px;
+    }
+    .basket-wrapper .sport-decription p{
+      width: 100%;
+      padding: 21px 85px;
+    }
+    .basket-wrapper .sport-time{
+      width: 350px;
+    }
+    /*09-02-2018*/
+    .pl-25{
+      padding-left: 0;
+    }
+    .create-account{
+      padding-right: 75px;
+      padding-left: 30px;
+    }
+    .account-login{
+      padding-left: 63px;
+    }
+    /*10-02-2018*/
+    .carousel-inner .item img{
+    height: 330px;
+   }
+   .product-2-list .carousel-control.left{
+    left: 0px;
+   }
+   .product-2-list .carousel-control.right{
+    right: 0px;
+   }
+   .range-selector input.form-control.input-number{
+    width: 70px;
+   }
+   .may-also-like label{
+    font-size: 16px;
+   } 
+}
+@media(max-width: 768px){
+	.categories{
+		    margin-left: 15px;
+	}
+	.right-sider-menu ul{
+		padding-left: 10px;
+	}
+	.logo h1{
+		    font-size: 22px;
+	}
+	.dropdown {
+    margin-right: 0px;
+}
+.right-sider-menu ul li {
+    display: inline-block;
+    margin-right: 33px;
+}
+.search-box-image {
+    height: 215px;
+    }
+    .search-box-image .search-team input[type="text"]::-webkit-input-placeholder{
+    	font-size: 15px;
+    }
+    .search-box-image .search-team {
+    padding: 75px 0;
+}
+.search-box-image .search-team .search-click {
+    top: 90px;
+}
+ .logo{
+  width: 45%;
+}
+.logo h1, .logo-header h1{
+      font-size: 20px;
+    }
+    /*09-02-2018*/
+    .account-login{
+      padding-left: 117px;
+    }
+    .create-account{
+      padding-right: 61px;
+    }
+      .checkout-wrapper .sign-up-account{
+    right: 0;
+  }
+  .jacket-description-order span{
+    margin-left: 0;
+      }
+        .ship-to-details.col-lg-offset-3{
+      margin-left: 0;
+    }
+    .whats-this {
+    position: absolute;
+    top: -31px;
+    right: 17px;
+    }
+}
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navbar {
+    text-align: center;
+  } 
+}  
+
+@media(max-width:767px){
+
+.search-box-image {
+    height: 188px;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-header{
+        display: block;
+        float: left;
+        margin-left: 15px;
+    }
+    /*07-02-2018*/
+    .navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #333;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+   .wrap input[type="submit"]{
+    position: unset;
+    float: none;
+    margin-bottom: 15px;
+   }
+    input#search{
+        width: 60%;
+        background-color: #f7f7f7;
+   }
+   .middle-school-dark .sport-logo{
+    right: 21px;
+    top: 143px;
+   }
+   .sport-middle-desc{
+    width: 100%;
+   }
+   .sport-decription p{
+    width: 100%;
+    margin-top: 10px;
+   }
+   .cell-table{
+    top: 300px;
+    height: 60px;
+    background-color: #f7f7f7;
+   }
+   .navbar-nav .open .dropdown-menu{
+    background-color: #e7e7e7;
+   }
+   .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+    background:none;
+   }
+   .nav>li{
+    border-bottom: 1px solid #999;
+   }
+   .cell input[type="submit"]{
+    top: 25px;
+   }
+   .cell{
+    margin: 0px auto;
+   }
+   .sport-decription p{
+    padding: 24px 54px;
+   }
+   /*08-02-2018*/
+   .navbar{
+    min-height: 50px;
+   }
+   .navbar-header{
+    background-color: #f7f7f7;
+   }
+   .logo h1, .logo-header h1{
+    margin-top: 13px;
+   }
+   .blog-wrapper{
+    margin-top: 20px;
+  }
+  .contact-content{
+    padding: 0px 161px;
+  }
+  .basket-wrapper .sport-time{
+    width: 308px;
+  }
+  /*09-02-2018*/
+  .homepage-header-static .navbar-header{
+    height: 80px;
+  } 
+  .homepage-header-static .logo-header{
+    padding-top: 15px;
+  }
+  .homepage-header-static .navbar-toggle{
+    margin-bottom: 22px;
+    margin-top: 22px;
+  }
+   .account-login, .create-account{
+    width: 100%;
+    padding:15px;
+    margin: 0;
+   }
+   .wrapper-box:after, .wrapper-box:before, .login-form-tooltip:before, .login-form-tooltip:after{
+    display: none;
+   }
+      /*10-02-2018*/
+   .open-cart-down{
+    margin-bottom: 40px;
+   }
+   .product-2-list .carousel-control.right{
+    right: 0;
+   }
+   .product-2-list .carousel-control.left{
+    left: 0;
+   }
+   .product-2-list .carousel-control{
+    top: 127px;
+   }
+   .carousel-inner .item img{
+    height: 330px;
+    margin-left: 188px;
+   }
+    .product-2-list .breadcrums-right{
+    margin-top: 40px;
+   }
+    .like-wrapper{
+    padding-left: 0;
+   }
+   .may-also-like{
+    margin-top: 30px;
+   }
+    
+}
+@media(max-width:575px){
+.categories{
+	display: block;
+	text-align: left;
+	margin-left: 10px;
+}
+.dropdown-content{
+	    min-width: 170px;
+}
+.logo {
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+}
+.right-sider-menu ul{
+	    padding-left: 20px;
+    margin-top: 10px;
+}
+.search-box-image .search-team{
+	    width: 80%;
+}
+.search-box-image .search-team {
+    padding: 30px 0;
+    }
+    .search-box-image {
+    height: 105px;
+}
+.search-box-image .search-team .search-click {
+    top: 45px;
+    }
+   .sub-content-images .col-xs-4{
+   	width: 100%;
+   }
+   .sub-content-images .col-xs-6{
+   	width: 100%;
+   }
+   /*07-02-2018*/
+   .logo-header h1{
+    font-size: 20px;
+    margin-top: 12px;
+   }
+   .middle-school-dark .sport-logo{
+    right: 7px;
+    top: 145px;
+   }
+   .middle-school-dark .sport-logo img{
+    height: 67px;
+   }
+   .sport-time{
+    margin-bottom: 10px;
+   }
+   .sport-decription p{
+    padding: 16px 54px;
+   }
+   /*08-02-2018*/
+   .about-us p, .about-descripition p{
+    padding: 0 15px;
+   }
+   .about-quotes:before{
+    left: 18px;
+   }
+   .about-quotes p{
+    font-size: 17px;
+    padding: 28px 16px;
+   }
+   .about-quotes:after{
+    top: -21px;
+   }
+   .about-quotes:before, .about-quotes:after{
+    background-image: url(../images/quotes-1.png);
+   }
+   .contact-content{
+    padding: 0 21px;
+   }
+   .basket-wrapper .sport-decription p{
+    width: 100%;
+    padding: 11px 51px;
+   }
+   .basket-wrapper .sport-time{
+    width: 344px;
+   }
+   /*09-02-2018*/
+   .account-wrapper .nav-pills{
+    margin-top: 30px;
+   }
+   .account-details{
+    padding-left: 0;
+   }
+   .question-circle{
+        top: -39px;
+    right: 15px;
+   }
+   .checkout-wrapper .sign-up-account{
+    position: unset;
+   }
+   .content-ship-2 {
+    width: 80%;
+  }
+  .circle-check{
+    height: 45px;
+    width: 45px;
+  }
+  .checkout-wrapper .shipping-check{
+    width: 30%;
+  }
+  .checkout-wrapper .shipping-check-right{
+        width: 30%;
+  }
+  .circle-check .check{
+        padding: 2px;
+  }
+  .circle-check .two {
+    padding: 2px;
+}
+ /*10-02-2018*/
+   .carousel-inner .item img{
+    margin-left: 50px;
+   }
+   .sizes-description ul li.xs, .sizes-description ul li.s, 
+   .sizes-description ul li.xl, .sizes-description ul li.two-xl, 
+   .sizes-description ul li.three-xl{
+      margin-bottom: 10px;
+   }
+
+   
+}
+
+@media(max-width:320px){
+	.dropdown-content {
+    min-width: 130px;
+    padding-left: 0;
+}
+ .search-box-image .search-team input[type="text"]::-webkit-input-placeholder{
+    	font-size: 10px;
+    }
+    .search-box-image .search-team .form-control-search{
+    	    height: 40px;
+    }
+    .search-box-image .search-team .search-click {
+    top: 38px;
+}
+.search-box-image {
+    height: 85px;
+    }
+
+    /*08-02-2018*/
+    .logo-header h1{
+      font-size: 16px;
+      margin-top: 18px;
+    }
+    .contact-content{
+      padding: 0 15px;
+    }
+    .about-quotes:after{
+      top: -9px;
+      right: 14px;
+    }
+    .about-quotes:before{
+      left: 4px;
+    }
+    .heading-name h3{
+      font-size: 13px;
+    }
+    .middle-school-dark .sport-logo{
+      top: 116px;
+    }
+    .basket-wrapper .sport-time{
+      width: 290px;
+    }
+    .basket-wrapper .sport-decription p{
+      padding: 11px 37px;
+    }
+    .dicount-code .sign-up-account a{
+      padding: 10px 20px;
+    }
+}

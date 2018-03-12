@@ -1,0 +1,28 @@
+Please keep this information for your records:
+
+Magento Admin Info:
+
+Username:
+    admin
+Email:
+    mj@narola.email
+Password:
+    admin123
+Your Store Address:
+    http://localhost/magento2.2.1/ 
+Magento Admin Address:
+    http://localhost/magento2.2.1/admin_h6l4iv/ 
+Be sure to bookmark your unique URL and record it offline.
+Encryption Key:
+    7d5f44aa18e73d50210d5fac707627b8
+
+Database Info:
+
+Database Name:
+    magento2.2.1
+Username:
+    root
+Password:
+    
+
+For security, remove write permissions from these directories: 'C:/wamp64/www/magento2.2.1/app/etc'

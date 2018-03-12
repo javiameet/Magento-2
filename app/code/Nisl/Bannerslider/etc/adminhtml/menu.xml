@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Nisl
+ *
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Nisl
+ * @package     Nisl_Bannerslider  
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Nisl_Bannerslider::bannerslider" title="Banner Slider" module="Nisl_Bannerslider" sortOrder="9999" resource="Nisl_Bannerslider::bannerslider" />
+
+    	 <add id="Nisl_Bannerslider::bannerslider_sliders" title="Manage Sliders" module="Nisl_Bannerslider" sortOrder="10" action="bannerslideradmin/slider" parent="Nisl_Bannerslider::bannerslider" resource="Nisl_Bannerslider::bannerslider_sliders" />
+
+    	 <add id="Nisl_Bannerslider::bannerslider_banners" title="Manage Banners" module="Nisl_Bannerslider" sortOrder="10" parent="Nisl_Bannerslider::bannerslider" action="bannerslideradmin/banner" resource="Nisl_Bannerslider::bannerslider_banners"/>
+
+    	 <add id="Nisl_Bannerslider::settings" title="Settings" module="Nisl_Bannerslider" sortOrder="20" parent="Nisl_Bannerslider::bannerslider" action="adminhtml/system_config/edit/section/bannerslider" resource="Nisl_Bannerslider::settings"/>
+    </menu>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">    
+	<body>
+		<referenceContainer name="footer">
+     		<block class="Nisl\Logo\Block\Display" name="custom_footer" as="custom_footer" before="-" template="Nisl_Logo::customfooter.phtml" />     		
+		</referenceContainer>
+		<move element="footer_links" destination="footer" after="custom_footer" />
+	</body>
+</page>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>product-2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-child.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+<div class="container">
+        <div id="main_area">
+                <!-- Slider -->
+                <div class="row">
+                    <div class="col-xs-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                        	<div class="pm-wrapper">
+                        	<div class="plus-minus">
+                        		<a href="#"><img src="images/plus.png"></a>
+                        	</div>
+                        	<div class="plus-minus mt-20">
+                        		<a href="#"><img src="images/minus.png"></a>
+                        	</div>
+                        	</div>
+                            <div class="col-sm-12" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+                                        <img src="images/prooduct-front.png"></div>
+
+                                        <div class="item" data-slide-number="1">
+                                        <img src="images/prooduct-front.png"></div>
+
+                                        <div class="item" data-slide-number="2">
+                                        <img src="images/prooduct-front.png"></div>
+
+                                        <div class="item" data-slide-number="3">
+                                        <img src="images/prooduct-front.png"></div>
+
+                                        <div class="item" data-slide-number="4">
+                                        <img src="images/prooduct-front.png""></div>
+
+                                        <div class="item" data-slide-number="5">
+                                        <img src="images/prooduct-front.png"></div>
+                                    </div><!-- Carousel nav -->
+                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                        <span><img src="images/previous.png"></span>                                       
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                        <span><img src="images/next.png"></span>                                       
+                                    </a>                                
+                                    </div>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                </div><!--/Slider-->
+
+                <div class="row" id="slider-thumbs">
+                        <!-- Bottom switcher of slider -->
+                        <ul class="hide-bullets">
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-0"><img src="images/jacket-small.png"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-1"><img src="images/jacket-small.png"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-2"><img src="images/jacket-small.png"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-3"><img src="images/jacket-small.png"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-4"><img src="images/jacket-small.png"></a>
+                            </li>
+
+                            <li class="col-sm-2">
+                                <a class="thumbnail" id="carousel-selector-5"><img src="images/jacket-small.png"></a>
+                            </li>
+                        </ul>                 
+                </div>
+        </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/main-child.js"></script>
+<script>
+  jQuery(document).ready(function($) {
+ 
+        $('#myCarousel').carousel({
+                interval: 5000
+        });
+ 
+        $('#carousel-text').html($('#slide-content-0').html());
+ 
+        //Handles the carousel thumbnails
+       $('[id^=carousel-selector-]').click( function(){
+            var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+            var id = parseInt(id);
+            $('#myCarousel').carousel(id);
+        });
+ 
+ 
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+                 var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+        });
+});
+</script>
+</body>
+</html>
