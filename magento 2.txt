@@ -1,0 +1,397 @@
+==================
+Magento Login:-
+================
+Email :- narolainfotech2017@gmail.com
+Password:- 9687254787Meet!
+
+=============================
+Download Magento Link:-
+===============================
+https://www.mageplaza.com/download-magento/#download-zip
+https://magento.com/tech-resources/download
+https://github.com/magento/magento2-sample-data
+
+
+====================================================
+How to install sample data using command line
+====================================================
+goto magento directory
+php C:/wamp64/www/magento2.2.1/bin/magento sampledata:deploy
+
+
+
+
+Error :- PHP is not recognized as an internal or external command in command prompt
+==> set php path in envirment path
+	C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Bitvise SSH Client\;C:\wamp64\bin\php\php5.6.16;C:\wamp64\bin\php\php7.0.4;
+	
+	
+https://www.mageplaza.com/kb/how-flush-enable-disable-cache.html
+
+To flush Magento 2 cache:
+
+    Go to Magento root directory
+    Type: php bin/magento cache:clean and php bin/magento cache:flush
+    Finish! Go to your Magento store and check the result.
+
+Check cache status
+
+	First of all, let show cache status by the following command line:
+
+		php bin/magento cache:status
+
+
+Clean Cache command line
+
+	php bin/magento cache:clean
+
+Disable Cache command line
+
+	The following command will disable all cache types
+
+	php bin/magento cache:disable
+
+Enable Cache command line
+
+	It is similar to how to Disable cache all types and specific cache type
+		Enable all cache types
+
+			php bin/magento cache:enable
+
+		Enable specific cache type
+
+			php bin/magento cache:enable CACHE_TYPE
+
+			Example
+
+			php bin/magento cache:enable layout
+
+
+After install extenstion command:-
+	php bin/magento setup:upgrade
+
+
+Put Magento into a developer mode
+	php bin/magento deploy:mode:set developer
+====================================================
+
+
+
+====================================================
+How to create custom theme in magento 2
+====================================================
+https://magenticians.com/create-custom-theme-magento-2/
+https://www.magestore.com/magento-2-tutorial/magento-2-theme-create-sample-custome-theme/
+
+After create custome thebe below command execute
+
+php bin/magento setup:upgrade
+php bin/magento setup:db-schema:upgrade
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy
+php bin/magento indexer:reindex
+php bin/magento cache:clean
+php bin/magento cache:flush
+
+
+====================================================
+How to check Enable and Disable the modules
+====================================================
+php bin/magento module:status
+
+
+====================================================
+How to Enable module
+====================================================
+php bin/magento module:enable Mageplaza_HelloWorld
+
+
+==================================================================
+How to create custom css file in custom theme in magento 2
+==================================================================
+app\design\frontend\Nisl\Mytheme\web\css\customcss.css
+app\design\frontend\Nisl\Mytheme\Magento_Theme\layout\default_head_blocks.xml
+	==> <css src="css/customcss.css" order="100"/>
+
+
+=================================================================
+How to create custom theme page layout file in magento 2
+=================================================================
+https://magento.stackexchange.com/questions/118278/creating-a-custom-homepage-template-in-magento2/118363
+
+Step 1:- Create below file and put code.
+		 app\design\frontend\Nisl\Mytheme\Magento_Theme\layouts.xml
+		 <?xml version="1.0" encoding="UTF-8"?>
+			<page_layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			              xsi:noNamespaceSchemaLocation="urn:magento:framework:View/PageLayout/etc/layouts.xsd">
+
+			    <layout id="fullwidth1column">
+			        <label translate="true">Full Width 1 Column</label>
+			    </layout>
+
+			</page_layouts>
+Step 2:- Create below file and put code.
+		 app\design\frontend\Nisl\Mytheme\Magento_Theme\page_layout\fullwidth1column.xml
+
+
+
+=================================================================
+How to add custom header in custom theme  magento 2
+=================================================================
+Step 1:
+
+Create a new theme folders
+app\design\frontend\Nisl\Mytheme
+
+Step 2:
+Create a default.xml file in the following path
+app\design\frontend\Nisl\Mytheme\Magento_Theme\layout\default.xml
+and add the below code. Here we have added our header in the name of customheader.phtml
+
+Step 3:
+Create a header template file in the following path
+app/design/frontend/Vendor/theme/Magento_Theme/templates/html/customheader.phtml
+Here you can customise your header as you need.
+
+After clearing the cache and static content deployment, you can able to see your header. If you want to use the logo and top searh and minicart in your custom header, you have to add the below code in app/design/frontend/Vendor/theme/Magento_Theme/layout/default.xml
+
+=========================================================================
+How to increase the admin session timeout 
+=========================================================================
+Stores > Settings > Configuration > Advanced > Admin > Security > Admin Session Lifetime (seconds)
+
+=========================================================================
+After install magento2 not load css and js file
+=========================================================================
+Step1 :- Upload .htaccess file in pub and static folder
+
+
+====================================================================
+How to call Top menu in pthml file
+====================================================================
+<?php echo $this->getLayout()->createBlock("Magento\Theme\Block\Html\Topmenu")->setTemplate("Magento_Theme::html/topmenu.phtml")->toHtml(); ?>
+
+
+==============================
+How to create custom module in magento 2
+============================
+https://www.mageplaza.com/magento-2-module-development/
+
+===========================================
+How to change and add footer Block Links
+===========================================
+https://webkul.com/blog/call-custom-block-links-footer-magento-2/
+
+Privacy and Cookie Policy: privacy-policy-link
+Search Terms: search-term-popular-link
+Contact Us: contact-us-link
+Advanced Search: catalog-search-advanced-link
+Orders and Returns: sales-guest-form-link
+<referenceBlock name="footer_links">
+    <block class="Magento\Framework\View\Element\Html\Link\Current" name="your-link-name">
+        <arguments>
+            <argument name="label" xsi:type="string">Title</argument>
+            <argument name="path" xsi:type="string">path-of-your-page</argument>
+        </arguments>
+    </block>
+</referenceBlock>	
+
+<referenceBlock name="name_of_link_block" remove="true"/>
+
+====================================================
+How to create custom extension in magento 2
+====================================================
+Step 1:- app\code\Nisl\Bannerslider\registration.php
+	\Magento\Framework\Component\ComponentRegistrar::register(
+	    \Magento\Framework\Component\ComponentRegistrar::MODULE,
+	    'Nisl_Bannerslider',
+	    __DIR__
+	);
+
+Step 2:- app\code\Nisl\Bannerslider\etc\module.xml
+	<?xml version="1.0"?>	
+	<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+	    <module name="Nisl_Bannerslider" setup_version="1.0.0"/>
+	</config>
+
+Step 3:- app\code\Nisl\Bannerslider\etc\adminhtml\menu.xml
+	<?xml version="1.0"?>
+	<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	    <menu>
+	    	<add id="Nisl_Bannerslider::bannerslider" title="Banner Slider" module="Nisl_Bannerslider" sortOrder="9999" resource="Nisl_Bannerslider::bannerslider" />
+
+	    	 <add id="Nisl_Bannerslider::bannerslider_sliders" title="Manage Sliders" module="Nisl_Bannerslider" sortOrder="10" action="bannerslideradmin/slider" parent="Nisl_Bannerslider::bannerslider" resource="Nisl_Bannerslider::bannerslider_sliders" />
+
+	    	 <add id="Nisl_Bannerslider::bannerslider_banners" title="Manage Banners" module="Nisl_Bannerslider" sortOrder="10" parent="Nisl_Bannerslider::bannerslider" action="bannerslideradmin/banner" resource="Nisl_Bannerslider::bannerslider_banners"/>
+
+	    	 <add id="Nisl_Bannerslider::settings" title="Settings" module="Nisl_Bannerslider" sortOrder="20" parent="Nisl_Bannerslider::bannerslider" action="adminhtml/system_config/edit/section/bannerslider" resource="Nisl_Bannerslider::settings"/>
+	    </menu>
+	</config>
+
+Step 4:- app\code\Nisl\Bannerslider\etc\acl.xml
+	<?xml version="1.0"?>
+	<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+		<acl>
+		    <resources>
+		        <resource id="Magento_Backend::admin">
+		        	<resource id="Nisl_Bannerslider::bannerslider" title="Banner Slider" sortOrder="10">
+		        	    <resource id="Nisl_Bannerslider::bannerslider_bannerslider" title="Banner Slider" sortOrder="10">
+		        	        <resource id="Nisl_Bannerslider::bannerslider_sliders" title="Manage Sliders" sortOrder="10" />
+		        	        <resource id="Nisl_Bannerslider::bannerslider_banners" title="Manage Banners" sortOrder="10" />	        	        	        	        
+		        	        <resource id="Nisl_Bannerslider::settings" title="Settings" sortOrder="20" />
+		        	    </resource>
+		        	</resource>
+		            <resource id="Magento_Backend::stores">
+		                <resource id="Magento_Backend::stores_settings">
+		                    <resource id="Magento_Config::config">
+		                        <resource id="Nisl_Bannerslider::config_bannerslider" title="Banner Slider" />
+		                    </resource>
+		                </resource>
+		            </resource>
+		        </resource>
+		    </resources>
+		</acl>
+	</config>
+
+Step 5:- app\code\Nisl\Bannerslider\etc\adminhtml\system.xml
+	<?xml version="1.0"?>
+	<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	    <system>
+	        <tab id="nisl" translate="label" sortOrder="450">
+	            <label>nisl</label>
+	        </tab>
+	        <section id="bannerslider" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">            
+	            <label>Banner Slider</label>
+	            <tab>nisl</tab>
+	            <resource>Nisl_Bannerslider::config_bannerslider</resource>
+	            <group id="general" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+	                <label>General</label>
+	                <field id="enable_frontend" translate="label comment" type="select" sortOrder="0"  showInDefault="1" showInWebsite="1" showInStore="1">
+	                    <label>Enable</label>
+	                    <comment>Enable frontend</comment>
+	                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+	                </field>
+	            </group>
+	            <group id="implement" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+	                <label>Implement Code</label>
+	                <frontend_model>Nisl\Bannerslider\Block\Adminhtml\System\Config\Implementcode</frontend_model>
+	            </group>
+	        </section>
+	    </system>
+	</config>
+
+Step 6:- app\code\Nisl\Bannerslider\etc\config.xml
+	<?xml version="1.0"?>
+		<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	    <default>
+	        <bannerslider>
+	            <general>
+	                <enable_frontend>1</enable_frontend>
+	            </general>
+	        </bannerslider>
+	        <system>
+	            <media_storage_configuration>
+	                <allowed_resources>
+	                    <bannerslider_folder>nisl</bannerslider_folder>
+	                </allowed_resources>
+	            </media_storage_configuration>
+	        </system>
+	    </default>
+	</config>
+
+Step 7:- app\code\Magestore\Bannerslider\Block\Adminhtml\System\Config\Implementcode.php
+	<?php
+	namespace Nisl\Bannerslider\Block\Adminhtml\System\Config;
+	class Implementcode extends \Magento\Config\Block\System\Config\Form\Field
+	{
+	    protected function _getElementHtml(\Magento\Framework\Data\Form\Element\AbstractElement $element)
+	    {
+	        return '
+			<div class="notices-wrapper">
+			        <div class="messages">
+			            <div class="message" style="margin-top: 10px;">
+			                <strong>'.__('Add code below to a template file.').'</strong><br />
+			                $this->getLayout()->createBlock("Nisl\Bannerslider\Block\SliderItem")->setSliderId(your_slider_id)->toHtml();
+			            </div>
+			            <div class="message" style="margin-top: 10px;">
+			                <strong>'.__('You can put a slider on a cms page. Below is an example which we put a slider with slider_id is your_slider_id on a cms page.').'</strong><br />
+			                {{block class="Nisl\Bannerslider\Block\SliderItem" name="bannerslider.slidercustom" slider_id="your_slider_id"}}
+			            </div>
+			            <div class="message" style="margin-top: 10px;">
+			                <strong>'.__('Please copy and paste the code below on one of xml layout files where you want to show the banner. Please replace the your_slider_id variable with your own slider Id.').'</strong><br />
+			                &lt;block class="Nisl\Bannerslider\Block\SliderItem"&gt;<br />
+	                           &nbsp;&nbsp;&lt;action method="setSliderId"&gt;<br />
+	                               &nbsp;&nbsp;&nbsp;&nbsp;&lt;argument name="sliderId" xsi:type="string"&gt;your_slider_id&lt;/argument&gt;<br />
+	                           &nbsp;&nbsp;&lt;/action&gt;<br />
+	                       &lt;/block>
+			            </div>
+			        </div>
+			</div>';
+	    }
+	}
+
+Step 8:- app\code\Nisl\Bannerslider\etc\di.xml
+	<?xml version="1.0"?>
+	<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+	        <arguments>
+	            <argument name="collections" xsi:type="array">
+	                <item name="banner_grid_listing_data_source" xsi:type="string">Nisl\Bannerslider\Model\ResourceModel\Banner\Grid\Collection</item>
+	            </argument>
+	        </arguments>
+	    </type>
+	    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+	        <arguments>
+	            <argument name="collections" xsi:type="array">
+	                <item name="slider_grid_listing_data_source" xsi:type="string">Nisl\Bannerslider\Model\ResourceModel\Slider\Grid\Collection</item>
+	            </argument>
+	        </arguments>
+	    </type>    
+	    <type name="Nisl\Bannerslider\Model\ResourceModel\Banner\Grid\Collection">
+	        <arguments>
+	            <argument name="mainTable" xsi:type="string">nisl_bannerslider_banner</argument>
+	            <argument name="eventPrefix" xsi:type="string">banner_grid_collection</argument>
+	            <argument name="eventObject" xsi:type="string">banner_collection</argument>
+	            <argument name="resourceModel" xsi:type="string">Nisl\Bannerslider\Model\ResourceModel\Banner</argument>
+	        </arguments>
+	    </type>
+	    <type name="Nisl\Bannerslider\Model\ResourceModel\Slider\Grid\Collection">
+	        <arguments>
+	            <argument name="mainTable" xsi:type="string">nisl_bannerslider_slider</argument>
+	            <argument name="eventPrefix" xsi:type="string">slider_grid_collection</argument>
+	            <argument name="eventObject" xsi:type="string">slider_collection</argument>
+	            <argument name="resourceModel" xsi:type="string">Nisl\Bannerslider\Model\ResourceModel\Slider</argument>
+	        </arguments>
+	    </type>    
+
+	    <virtualType name="BannerGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+	        <arguments>
+	            <argument name="appliers" xsi:type="array">
+	                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+	                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+	            </argument>
+	        </arguments>
+	    </virtualType>
+	    <virtualType name="SliderGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+	        <arguments>
+	            <argument name="appliers" xsi:type="array">
+	                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+	                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+	            </argument>
+	        </arguments>
+	    </virtualType>
+	    <virtualType name="BannerGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+	        <arguments>
+	            <argument name="collection" xsi:type="object" shared="false">Nisl\Bannerslider\Model\ResourceModel\Banner\Collection</argument>
+	            <argument name="filterPool" xsi:type="object" shared="false">BannerGirdFilterPool</argument>
+	        </arguments>
+	    </virtualType>
+	    <virtualType name="SliderGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+	        <arguments>
+	            <argument name="collection" xsi:type="object" shared="false">Nisl\Bannerslider\Model\ResourceModel\Slider\Collection</argument>
+	            <argument name="filterPool" xsi:type="object" shared="false">SliderGirdFilterPool</argument>
+	        </arguments>
+	    </virtualType>    
+	</config>
+
+
