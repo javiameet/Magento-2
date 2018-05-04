@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Nipl. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Nipl_CRUD::nipl_customslidergrid_index" title="Slider" module="Nipl_CRUD"  sortOrder="20" dependsOnModule="Nipl_CRUD" action="crud/customslidergrid/index" resource="Nipl_CRUD::nipl_customslidergrid_index"/>
+<!--AddMenu-->
+    </menu>
+</config>
